@@ -15,8 +15,9 @@ function AnimatedRoutes() {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         {/* Set the home page as the default page using the "index" property */}
+         <Route path="/" element={<Home />} index />
         <Route path="/Home" element={<Home />} />
-        <Route path="/" element={<Home />} index />
+       
         <Route path="/Project" element={<Project />} />
         <Route path="/Skills" element={<Skills />} />
         <Route path="/Brief" element={<Brief />} />
